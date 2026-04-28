@@ -1,7 +1,88 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  background-color: purple;
-  color: white;
-  font-family: sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1a0b2e; /* Um roxo escuro mais elegante */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Classes utilitárias para as páginas simples */
+.page-container {
+  padding: 4rem 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #ff5c8d;
+  margin-bottom: 2rem;
+}
+
+.content-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+}
+
+/* Estilos para o formulário de contato */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.submit-button {
+  padding: 1rem;
+  background: #ff5c8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #ff3d77;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+

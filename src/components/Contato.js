@@ -2,34 +2,35 @@ import React from 'react';
 
 const Contato = () => {
   return (
-    <div style={{ padding: '20px', maxWidth: '600px' }}>
-      <h2>Entre em Contato</h2>
-      <p>Tem alguma dúvida sobre nossos monstros ou quer relatar um avistamento alienígena? Mande uma mensagem!</p>
+    <div className="page-container">
+      <h2 className="page-title">Entre em Contato</h2>
+      <p className="content-text">Tem alguma dúvida sobre nossos monstros ou quer relatar um avistamento alienígena? Mande uma mensagem!</p>
       
-      <form style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <label>
-          Nome:
-          <input type="text" placeholder="Seu nome" style={{ width: '100%', padding: '5px' }} />
-        </label>
-        <label>
-          E-mail:
-          <input type="email" placeholder="seu@email.com" style={{ width: '100%', padding: '5px' }} />
-        </label>
-        <label>
-          Mensagem:
-          <textarea placeholder="Como podemos te ajudar?" style={{ width: '100%', padding: '5px', height: '100px' }}></textarea>
-        </label>
-        <button type="button" style={{ padding: '10px', cursor: 'pointer' }}>Enviar Mensagem</button>
+      <form className="contact-form">
+        <div className="form-group">
+          <label>Nome:</label>
+          <input type="text" placeholder="Seu nome" />
+        </div>
+        <div className="form-group">
+          <label>E-mail:</label>
+          <input type="email" placeholder="seu@email.com" />
+        </div>
+        <div className="form-group">
+          <label>Mensagem:</label>
+          <textarea placeholder="Como podemos te ajudar?" rows="5"></textarea>
+        </div>
+        <button type="button" className="submit-button">Enviar Mensagem</button>
       </form>
 
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '40px' }}>
         <h3>Outros canais:</h3>
-        <p>📧 Email: contato@invazoresshop.com</p>
-        <p>📞 Telefone: (11) 98545-3583</p>
-        <p>📷 Instagram: @invazores_shop</p>
+        <p className="content-text">📧 Email: contato@invazoresshop.com</p>
+        <p className="content-text">📞 Telefone: (11) 98545-3583</p>
+        <p className="content-text">📷 Instagram: @invazores_shop</p>
       </div>
     </div>
   );
 };
 
 export default Contato;
+

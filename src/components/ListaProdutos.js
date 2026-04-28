@@ -6,6 +6,7 @@ import monster3 from './imagens/monster3.png';
 import monster4 from './imagens/monster4.png';
 import monster5 from './imagens/monster5.png';
 import monster6 from './imagens/monster6.png';
+import './Products.css';
 
 const listaProdutos = [
   { id: 1, name: 'MÃODÍBULA', price: 'R$ 89,90', img: monster1, description: 'Zumbi, Cadáver, Reviver.' },
@@ -18,9 +19,9 @@ const listaProdutos = [
 
 const ListaProdutos = () => {
   return (
-    <div>
-      <h2>Nossos Monstros</h2>
-      <div>
+    <div className="products-container">
+      <h2 className="products-title">Nossos Monstros</h2>
+      <div className="products-grid">
         {listaProdutos.map(produto => (
           <CardProduto key={produto.id} produto={produto} />
         ))}
@@ -30,3 +31,4 @@ const ListaProdutos = () => {
 };
 
 export default ListaProdutos;
+

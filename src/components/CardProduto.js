@@ -2,15 +2,15 @@ import React from 'react';
 
 const CardProduto = ({ produto }) => {
   return (
-    <div style={{ border: '1px solid white', margin: '10px', padding: '10px' }}>
-      <img src={produto.img} alt={produto.name} style={{ maxWidth: '150px' }} />
-      <h3>{produto.name}</h3>
-      <p>{produto.description}</p>
-      <span>{produto.price}</span>
-      <br />
-      <button>Capturar</button>
+    <div className="product-card">
+      <img src={produto.img} alt={produto.name} className="product-image" />
+      <h3 className="product-name">{produto.name}</h3>
+      <p className="product-description">{produto.description}</p>
+      <span className="product-price">{produto.price}</span>
+      <button className="buy-button">Capturar</button>
     </div>
   );
 };
 
 export default CardProduto;
+
