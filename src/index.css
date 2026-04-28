@@ -1,88 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700&display=swap');
-
+/* Estilos Globais Básicos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #1a0b2e; /* Um roxo escuro mais elegante */
-  color: #ffffff;
-  line-height: 1.6;
+  background-color: #4b0082; /* Roxo sólido simples */
+  color: white;
 }
 
-h1, h2, h3 {
-  font-family: 'Outfit', sans-serif;
-}
-
-/* Classes utilitárias para as páginas simples */
+/* Container principal para as páginas */
 .page-container {
-  padding: 4rem 5%;
-  max-width: 1000px;
+  padding: 20px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .page-title {
-  font-size: 2.5rem;
-  color: #ff5c8d;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
+/* Classes para Sobre e Contato */
 .content-text {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #e2e8f0;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
-/* Estilos para o formulário de contato */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
-  border-radius: 15px;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #5d00a3;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+}
+
+.form-group label {
+  margin-bottom: 5px;
 }
 
 .form-group input, .form-group textarea {
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  padding: 8px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .submit-button {
-  padding: 1rem;
-  background: #ff5c8d;
+  padding: 10px;
+  background-color: #ff007f;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-weight: 700;
   cursor: pointer;
-  transition: background 0.3s;
-}
-
-.submit-button:hover {
-  background: #ff3d77;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
 .footer {
-  margin-top: 4rem;
-  padding: 2rem;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #94a3b8;
-  font-size: 0.9rem;
+  padding: 20px;
+  border-top: 1px solid white;
+  margin-top: 40px;
 }
+
 
 
